@@ -102,7 +102,7 @@ function PostPage() {
           <p className="text-white text-[17px]">{tweetText}</p>
         </div> */}
 
-      <div className="w-[80vw] border-2 border-white rounded-xl p-4 h-auto max-h-[35vh] mt-4">
+      <div className="w-[80vw] border-2 border-white rounded-xl p-4 h-[200px] mt-4">
         <textarea
           className="text-white text-[17px] w-full h-full bg-transparent border-none outline-none resize-none"
           value={tweetText}
