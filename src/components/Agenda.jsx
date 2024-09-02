@@ -6,10 +6,6 @@ import Nav from "./Navbar/Nav";
 import Hero from "./HeroSection/Hero";
 import Bottom from "./bottonSection/Bottom";
 
-// icons import
-
-import { BiSearch } from "react-icons/bi";
-
 function Agenda() {
   const [agenda, setAgenda] = useState([]);
   const [selectedSession, setSelectedSession] = useState(null);

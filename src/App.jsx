@@ -1,6 +1,5 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Home';
 import ItemDetail from './ItemDetail';
 import Agenda from './components/agenda';
 import Sustainabilitypledge from './components/Sustainabilitypledge';
@@ -12,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Agenda />} />
         <Route path="/item/:itemId" element={<ItemDetail />} />
         <Route path="/agenda" element={<Agenda />} />
         <Route path='/sustainabilitypledge' element={<Sustainabilitypledge />} />
