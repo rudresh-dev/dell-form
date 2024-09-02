@@ -71,7 +71,7 @@ function PostPage() {
     };
   
     return (
-      <div className="bg-[#062357] w-screen h-screen flex  justify-center items-center flex-col gap-4 pt-10 overflow-y-hidden">
+      <div className="bg-[#062357] w-screen h-screen flex  justify-center items-center flex-col gap-4 overflow-y-hidden">
         <img className="absolute top-8" src="/dello-logo.png" alt="" />
         <div>
           <h1 className="text-white text-xl font-bold text-center mb-4 mt-4">
