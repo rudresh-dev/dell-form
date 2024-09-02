@@ -117,7 +117,7 @@ function PostPage() {
         </div>
   
         
-          <img className="absolute bottom-0 -z-0" src="/baricon.png" alt="" />
+          {/* <img className="absolute bottom-0 -z-0" src="/baricon.png" alt="" /> */}
      
       </div>
     );
