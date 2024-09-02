@@ -144,7 +144,7 @@ const handleSelect = (choice) => {
   };
 
   return (
-    <div className="bg-[#062357] w-screen h-screen flex flex-col items-center justify-center">
+    <div className="bg-[#062357] w-screen h-screen flex flex-col items-center justify-center overflow-y-hidden">
       <img src="/dello-logo.png" alt="" className=" absolute top-8" />
       <h1 className="text-white text-lg mb-4 text-center px-3 mt-4">
         Pick from the list of sustainability choices to create your personalized
@@ -156,8 +156,8 @@ const handleSelect = (choice) => {
         {choices.map((choice) => (
           <div
             key={choice.id}
-            className={`option w-[150px] h-[130px] flex items-start flex-col p-3 m-1 cursor-pointer
-        border-2 rounded-lg transition-colors duration-300 gap-4 
+            className={`option w-[150px] h-[130px]  flex items-start flex-col p-3 m-1 cursor-pointer
+        border-2 rounded-lg transition-colors duration-300 gap-4 text-[15px]
         ${
           selectedOption === choice.sendText
             ? "border-[#81C7FA] text-[#81C7FA]"
@@ -174,7 +174,7 @@ const handleSelect = (choice) => {
                   : choice.iconDefault
               }
               alt={choice.title}
-              className="w-10 h-10" // Example size, adjust as needed
+              className="w-10 h-10 " // Example size, adjust as needed
             />
             {choice.title}
           </div>

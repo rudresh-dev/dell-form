@@ -20,7 +20,7 @@ const Sustainabilitypledge = () => {
   };
 
   return (
-    <div className="bg-[#062357] w-screen h-screen flex justify-center items-center">
+    <div className="bg-[#062357] w-screen h-screen flex justify-center items-center overflow-y-hidden">
       <div className="flex flex-col justify-center gap-10 items-center h-[80%] ">
         <div className="absolute top-8">
           <img src="/dello-logo.png" alt="" />
@@ -53,9 +53,9 @@ const Sustainabilitypledge = () => {
             <p className="translate-x-2">Get Started</p>
           </button>
         </div>
-        <div className="absolute -bottom-10 -z-0">
+        {/* <div className="absolute -bottom-10 -z-0">
           <img src="/baricon.png" alt="" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

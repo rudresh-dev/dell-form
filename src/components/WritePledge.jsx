@@ -15,11 +15,11 @@ function WritePledge() {
   };
 
   return (
-    <div className='bg-[#062357] w-screen h-screen flex flex-col gap-10 items-center justify-center'>
+    <div className='bg-[#062357] w-screen h-screen flex flex-col gap-10 items-center justify-center '>
         <img className='absolute top-8' src="/dello-logo.png" alt="" />
       <h1 className="text-white text-xl mb-4">Write your own sustainability pledge:</h1>
       <textarea
-        className="text-area p-4 rounded-xl bg-[#062357] border-2 border-white text-white"
+        className="text-area p-4 rounded-xl bg-[#062357] border-2 border-white text-white w-[80vw]"
         value={pledgeText}
         onChange={(e) => setPledgeText(e.target.value)}
         rows="4"
