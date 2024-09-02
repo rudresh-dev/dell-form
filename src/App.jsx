@@ -6,6 +6,7 @@ import Sustainabilitypledge from './components/Sustainabilitypledge';
 import PostPage from './components/PostPage';
 import SelectPage from './components/SelectPage';
 import WritePledge from './components/WritePledge';
+import Test from './components/Text';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path='/select' element={<SelectPage />} />
         <Route path='/post' element={<PostPage />} />
         <Route path="/write-pledge" element={<WritePledge />} />
+        <Route path="/test" element={<Test />} />
+
       </Routes>
     </BrowserRouter>
   );
