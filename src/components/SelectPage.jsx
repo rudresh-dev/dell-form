@@ -14,8 +14,8 @@ const choiseData = {
           "id": 1,
           "title": "Write your own pledge",
           "sendText": "Custom Pledge",
-          "iconDefault": "/icons/1.svg",
-          "iconSelected": "/icons/11.svg"
+          "iconDefault": "/icons/1234.svg",
+          "iconSelected": "/icons/123.svg"
       },
       {
           "id": 2,
@@ -28,43 +28,43 @@ const choiseData = {
           "id": 3,
           "title": "Energy Efficiency",
           "sendText": "I pledge to reduce my energy consumption by using energy-efficient appliances, turning off lights when not in use, and unplugging devices",
-          "iconDefault": "/icons/33.svg",
-          "iconSelected": "/icons/3.svg"
+          "iconDefault": "/icons/4564.svg",
+          "iconSelected": "/icons/456.svg"
       },
       {
           "id": 4,
           "title": "Sustainable Transportation",
           "sendText": "I pledge to use sustainable transportation methods such as biking, walking, carpooling, or using public transit in daily commute",
-          "iconDefault": "/icons/44.svg",
-          "iconSelected": "/icons/4.svg"
+          "iconDefault": "/icons/33.svg",
+          "iconSelected": "/icons/3.svg"
       },
       {
           "id": 5,
-          "title": "Support Sustainable Products",
-          "sendText": "I pledge to support products and companies that prioritize sustainability, including purchasing items made from recycled materials and those that are ethically produced,",
-          "iconDefault": "/icons/55.svg",
-          "iconSelected": "/icons/5.svg"
+          "title": "Advocate for Green Spaces:",
+          "sendText": "I pledge to advocate for the preservation and expansion of urban green spaces and tree canopies in my community.",
+          "iconDefault": "/icons/77.svg",
+          "iconSelected": "/icons/7.svg"
       },
       {
           "id": 6,
           "title": "Reduce Single-Use Plastics",
           "sendText": "I pledge to avoid single-use plastics by using reusable bags, bottles, and containers",
-          "iconDefault": "/icons/66.svg",
-          "iconSelected": "/icons/6.svg"
+          "iconDefault": "/icons/44.svg",
+          "iconSelected": "/icons/4.svg"
       },
       {
           "id": 7,
-          "title": "Mindful Consumption",
-          "sendText": "I pledge to be a mindful consumer, considering the environmental impact of my purchases and opting for quality over quantity",
-          "iconDefault": "/icons/77.svg",
-          "iconSelected": "/icons/7.svg"
+          "title": "Sustainable Products",
+          "sendText": "I pledge to support products and companies that prioritize sustainability, including purchasing items made from recycled materials and those that are ethically produced",
+          "iconDefault": "/icons/55.svg",
+          "iconSelected": "/icons/5.svg"
       },
       {
           "id": 8,
           "title": "Plant a Tree",
           "sendText": "I pledge to plant at least one tree each year to contribute to reforestation and combat climate change",
-          "iconDefault": "/icons/88.svg",
-          "iconSelected": "/icons/8.svg"
+          "iconDefault": "/icons/231.svg",
+          "iconSelected": "/icons/23.svg"
       },
       {
           "id": 9,
