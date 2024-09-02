@@ -46,7 +46,7 @@ const Test = () => {
     <div className="w-screen bg-[#062357] h-screen flex items-center justify-center">
     <div
       ref={buttonRef}
-      className="relative px-1 w-48 h-12 bg-[#fff] border rounded-md shadow-lg overflow-hidden flex  items-center"
+      className="relative px-1 w-[80vw] h-12 bg-[#fff] border rounded-md shadow-lg overflow-hidden flex  items-center"
       onMouseMove={handleDrag}
       onMouseUp={resetButton}
       onTouchMove={handleTouchMove}
