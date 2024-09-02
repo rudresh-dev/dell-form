@@ -1,7 +1,7 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
-import Agenda from './components/agenda';
+import Agenda from './components/Agenda';
 import Sustainabilitypledge from './components/Sustainabilitypledge';
 import PostPage from './components/PostPage';
 import SelectPage from './components/SelectPage';
