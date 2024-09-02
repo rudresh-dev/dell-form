@@ -266,7 +266,7 @@ function Agenda() {
 
          // Record page visit
     const recordVisit = async () => {
-      const sessionId = getSessionId();  // Retrieve the current session ID
+      const sessionId = getSessionId();  
       try {
         const response = await fetch('https://seal-app-6kpbu.ondigitalocean.app/api/visits', {
           method: 'POST',
