@@ -294,7 +294,7 @@ function SelectPage() {
         Pick from the list of sustainability choices to create your personalized pledge
       </h1>
 
-      <div className="w-screen max-h-[60vh] flex flex-wrap justify-center items-start gap-2 overflow-y-auto p-3">
+      <div className="w-screen max-h-[70vh] flex flex-wrap justify-center items-start gap-2 overflow-y-auto p-3">
         {choices.map((choice) => (
           <div
             key={choice.id}
