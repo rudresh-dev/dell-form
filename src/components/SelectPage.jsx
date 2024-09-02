@@ -3,18 +3,98 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import arrowIcon from "/arrow.png";
+
+const choiseData = {
+
+  "choices": [
+      {
+          "id": 1,
+          "title": "Write your own pledge",
+          "sendText": "Custom Pledge",
+          "iconDefault": "/icons/1.svg",
+          "iconSelected": "/icons/11.svg"
+      },
+      {
+          "id": 2,
+          "title": "Reduce, Reuse, Recycle",
+          "sendText": "I pledge to reduce my consumption, reuse items whenever possible, and recycle to minimize waste.",
+          "iconDefault": "/icons/22.svg",
+          "iconSelected": "/icons/2.svg"
+      },
+      {
+          "id": 3,
+          "title": "Energy Efficiency",
+          "sendText": "I pledge to reduce my energy consumption by using energy-efficient appliances, turning off lights when not in use, and unplugging devices",
+          "iconDefault": "/icons/33.svg",
+          "iconSelected": "/icons/3.svg"
+      },
+      {
+          "id": 4,
+          "title": "Sustainable Transportation",
+          "sendText": "I pledge to use sustainable transportation methods such as biking, walking, carpooling, or using public transit in daily commute",
+          "iconDefault": "/icons/44.svg",
+          "iconSelected": "/icons/4.svg"
+      },
+      {
+          "id": 5,
+          "title": "Support Sustainable Products",
+          "sendText": "I pledge to support products and companies that prioritize sustainability, including purchasing items made from recycled materials and those that are ethically produced,",
+          "iconDefault": "/icons/55.svg",
+          "iconSelected": "/icons/5.svg"
+      },
+      {
+          "id": 6,
+          "title": "Reduce Single-Use Plastics",
+          "sendText": "I pledge to avoid single-use plastics by using reusable bags, bottles, and containers",
+          "iconDefault": "/icons/66.svg",
+          "iconSelected": "/icons/6.svg"
+      },
+      {
+          "id": 7,
+          "title": "Mindful Consumption",
+          "sendText": "I pledge to be a mindful consumer, considering the environmental impact of my purchases and opting for quality over quantity",
+          "iconDefault": "/icons/77.svg",
+          "iconSelected": "/icons/7.svg"
+      },
+      {
+          "id": 8,
+          "title": "Plant a Tree",
+          "sendText": "I pledge to plant at least one tree each year to contribute to reforestation and combat climate change",
+          "iconDefault": "/icons/88.svg",
+          "iconSelected": "/icons/8.svg"
+      },
+      {
+          "id": 9,
+          "title": "Educate Others",
+          "sendText": "I pledge to educate others about the importance of trees and encourage them to participate in tree-planting initiatives.",
+          "iconDefault": "/icons/88.svg",
+          "iconSelected": "/icons/8.svg"
+      },
+      {
+          "id": 10,
+          "title": "Reduce Paper Use",
+          "sendText": "I pledge to reduce my paper use and support tree free paper products to decrease deforestation",
+          "iconDefault": "/icons/88.svg",
+          "iconSelected": "/icons/8.svg"
+      }
+  ]
+}
+
+
 function SelectPage() {
-  const [choices, setChoices] = useState([]);
+  // const [choices, setChoices] = useState([]);
   const [selectedOption, setSelectedOption] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
   const [isClicked, setIsClicked] = useState(false);
-  useEffect(() => {
-    fetch("../../sustainabilityChoices.json")
-      .then((response) => response.json())
-      .then((data) => setChoices(data.choices))
-      .catch((err) => console.error("Failed to load choices", err));
-  }, []);
+  const [choices, setChoices] = useState(choiseData.choices);
+ 
+  // useEffect(() => {
+  //   fetch("../../sustainabilityChoices.json")
+  //     .then((response) => response.json())
+  //     .then((data) => setChoices(data.choices))
+  //     .catch((err) => console.error("Failed to load choices", err));
+  // }, []);
 
 //   const handleSelect = (choice) => {
 //     setSelectedOption(choice.sendText); // Set the selected option using the sendText
