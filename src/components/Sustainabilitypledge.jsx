@@ -1,10 +1,9 @@
-
 import { useNavigate } from "react-router-dom";
 import arrowIcon from "/arrow.png"; // Ensure the path is correct
 import { useEffect, useState } from "react";
 
-import { useRef } from 'react';
-import gsap from 'gsap';
+import { useRef } from "react";
+import gsap from "gsap";
 
 const Sustainabilitypledge = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -15,7 +14,6 @@ const Sustainabilitypledge = () => {
   const buttonRef = useRef(null);
   const arrowRef = useRef(null);
   const fillRef = useRef(null);
-
 
   const handleDrag = (e) => {
     e.preventDefault();
@@ -31,7 +29,7 @@ const Sustainabilitypledge = () => {
       newOffsetX = buttonRect.width - arrow.offsetWidth;
       gsap.to(arrow, { x: newOffsetX });
       gsap.to(fill, { width: newOffsetX + arrow.offsetWidth });
-      navigate('/select');
+      navigate("/select");
       return;
     }
 
@@ -51,7 +49,6 @@ const Sustainabilitypledge = () => {
     gsap.to(fillRef.current, { width: 0 });
   };
 
-
   // Minimum swipe distance for it to be considered a swipe
   const minSwipeDistance = 50;
 
@@ -63,14 +60,11 @@ const Sustainabilitypledge = () => {
     }
   }, [isClicked, navigate]);
 
-
   // Handle swipe gesture
   const handleTouchStart = (e) => {
     setTouchEnd(null); // reset touchEnd to avoid multiple swipes
     setTouchStart(e.targetTouches[0].clientX);
   };
-
-
 
   const handleTouchEnd = () => {
     if (!touchStart || !touchEnd) return;
@@ -116,29 +110,34 @@ const Sustainabilitypledge = () => {
           </button>
         </div> */}
 
-
-
-<div
-      ref={buttonRef}
-      className="relative px-1 w-[80vw] h-12 bg-[#fff] border rounded-md shadow-lg overflow-hidden flex  items-center"
-      onMouseMove={handleDrag}
-      onMouseUp={resetButton}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={resetButton}
-    >
-      <div ref={fillRef} className="absolute top-0 left-0 h-full bg-[#81C7FA] rounded-md" style={{ width: 0 }}></div>
-      <div
-        ref={arrowRef}
-        className="absolute w-10 h-10 px-1 bg-[#81C7FA] rounded-md cursor-pointer"
-        onMouseDown={(e) => e.preventDefault()} // Prevents drag from starting on touch devices
-        onTouchStart={(e) => e.preventDefault()} // Prevents drag from starting on touch devices
-      >
-        <span className="flex items-center justify-center h-full text-xl text-white">→</span>
-      </div>
-      <span className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-[#062357] font-semibold">
-        Get Started
-      </span>
-    </div>
+        <div
+          ref={buttonRef}
+          className="relative px-1 z-10 w-[80vw] h-14 bg-[#fff] border rounded-md shadow-lg overflow-hidden flex  items-center"
+          onMouseMove={handleDrag}
+          onMouseUp={resetButton}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={resetButton}
+        >
+          <div
+            ref={fillRef}
+            className="absolute top-0 left-0 h-full bg-[#81C7FA] rounded-md"
+            style={{ width: 0 }}
+          ></div>
+          <div
+            ref={arrowRef}
+            className="absolute w-10 h-12 px-1 bg-[#81C7FA] rounded-md cursor-pointer"
+            onMouseDown={(e) => e.preventDefault()} // Prevents drag from starting on touch devices
+            onTouchStart={(e) => e.preventDefault()} // Prevents drag from starting on touch devices
+          >
+            <span className="flex items-center justify-center h-full text-xl text-white">
+              →
+            </span>
+          </div>
+          <span className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-[#062357] font-semibold">
+            Get Started
+          </span>
+        </div>
+        <img className="absolute bottom-0 -z-0" src="/baricon.png" alt="" />
       </div>
     </div>
   );

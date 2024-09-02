@@ -62,7 +62,7 @@ function PostPage() {
     const location = useLocation();
     const { selection, title, icon } = location.state || {}; // Destructuring with a fallback to prevent errors
   
-    const tweetText = `I pledge to ${selection}. #sustainabilityatDTForum #DTforum`;
+    const tweetText = `I pledge to ${selection}. #CommitToGreenatDTForum`;
   
     const handlePost = () => {
       const encodedTweetText = encodeURIComponent(tweetText);
@@ -82,7 +82,7 @@ function PostPage() {
               <img src={icon} alt={title} className="h-11 w-11" />
             </div>
             <div className=" bg-[#81C7FA] h-full rounded-lg flex justify-center items-center w-full">
-              <h2 className="text-2xl text-center font-semibold text-[#222]">{title}</h2>
+              <h2 className="text-[19px] text-center font-semibold text-[#222]">{title}</h2>
             </div>
           </div>
         </div>
@@ -116,9 +116,9 @@ function PostPage() {
           </Link>
         </div>
   
-        {/* <div className="absolute bottom-0 -z-0">
-          <img src="/baricon.png" alt="" />
-        </div> */}
+        
+          <img className="absolute bottom-0 -z-0" src="/baricon.png" alt="" />
+     
       </div>
     );
   }
