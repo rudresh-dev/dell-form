@@ -25,7 +25,7 @@ function Agenda() {
 
 
   useEffect(() => {
-    fetch("/agenda.json")
+    fetch("./agenda.json")
       .then((response) => response.json())
       .then((data) => setAgenda(data.agenda));
 
