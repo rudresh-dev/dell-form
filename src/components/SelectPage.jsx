@@ -288,13 +288,13 @@ function SelectPage() {
   };
 
   return (
-    <div className="bg-[#062357] w-screen h-screen flex flex-col items-center justify-center overflow-y-hidden">
+    <div className="bg-[#062357] w-screen h-screen flex flex-col items-center justify-start pt-20 overflow-y-hidden">
       <img src="/dello-logo.png" alt="" className=" absolute top-8" />
       <h1 className="text-white text-lg mb-4 text-center px-3 mt-4">
         Pick from the list of sustainability choices to create your personalized pledge
       </h1>
 
-      <div className="w-screen max-h-[50vh] flex flex-wrap justify-center items-start gap-2 overflow-y-auto p-3">
+      <div className="w-screen max-h-[58vh] flex flex-wrap justify-center items-start gap-2 overflow-y-auto p-3">
         {choices.map((choice) => (
           <div
             key={choice.id}
