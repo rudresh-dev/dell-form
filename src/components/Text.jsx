@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import gsap from 'gsap';
 
@@ -43,26 +43,28 @@ const Test = () => {
   };
 
   return (
+    <div className="w-screen bg-[#062357] h-screen flex items-center justify-center">
     <div
       ref={buttonRef}
-      className="relative w-48 h-12 bg-white border rounded-full shadow-lg overflow-hidden"
+      className="relative px-1 w-48 h-12 bg-[#fff] border rounded-md shadow-lg overflow-hidden flex  items-center"
       onMouseMove={handleDrag}
       onMouseUp={resetButton}
       onTouchMove={handleTouchMove}
       onTouchEnd={resetButton}
     >
-      <div ref={fillRef} className="absolute top-0 left-0 h-full bg-blue-500 rounded-full" style={{ width: 0 }}></div>
+      <div ref={fillRef} className="absolute top-0 left-0 h-full bg-[#81C7FA] rounded-md" style={{ width: 0 }}></div>
       <div
         ref={arrowRef}
-        className="absolute w-10 h-10 bg-blue-300 rounded-full cursor-pointer"
+        className="absolute w-10 h-10 px-1 bg-[#81C7FA] rounded-md cursor-pointer"
         onMouseDown={(e) => e.preventDefault()} // Prevents drag from starting on touch devices
         onTouchStart={(e) => e.preventDefault()} // Prevents drag from starting on touch devices
       >
         <span className="flex items-center justify-center h-full text-xl text-white">→</span>
       </div>
-      <span className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-blue-900 font-semibold">
+      <span className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-[#062357] font-semibold">
         Get Started
       </span>
+    </div>
     </div>
   );
 };
