@@ -3,8 +3,8 @@ function Modal({ session, onClose }) {
   return (
     <div className="modal">
       <div className="modal-content">
-        <div className="flex bg-[#CBEEFF] items-center justify-between px-10 py-3">
-          <h2 className="text-center font-bold text-[#444] text-[18px]">
+        <div className="flex bg-[#CBEEFF] items-center justify-between px-10 py-3 gap-4">
+          <h2 className="text-left font-bold text-[#444] text-[18px]">
             {session.title}
           </h2>
           <span className="close cursor-pointer" onClick={onClose}>
