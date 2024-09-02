@@ -294,7 +294,7 @@ function SelectPage() {
         Pick from the list of sustainability choices to create your personalized pledge
       </h1>
 
-      <div className="w-screen max-h-[70vh] flex flex-wrap justify-center items-start gap-2 overflow-y-auto p-3">
+      <div className="w-screen max-h-[50vh] flex flex-wrap justify-center items-start gap-2 overflow-y-auto p-3">
         {choices.map((choice) => (
           <div
             key={choice.id}
@@ -317,7 +317,7 @@ function SelectPage() {
 
       <div
         ref={buttonRef}
-        className="relative px-1 w-[80vw] h-14 bg-[#fff] border rounded-md shadow-lg overflow-hidden flex  items-center"
+        className="absolute bottom-8 px-1 w-[80vw] h-14 bg-[#fff] border rounded-md shadow-lg overflow-hidden flex  items-center"
         onMouseMove={handleDrag}
         onMouseUp={resetButton}
         onTouchMove={handleTouchMove}
