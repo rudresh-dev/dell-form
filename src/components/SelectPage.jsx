@@ -183,7 +183,7 @@ const handleSelect = (choice) => {
 
       <div
         onClick={handleClick}
-        className="bg-white text-center responsive-mt w-64 rounded-md h-14 relative font-sans text-black text-xl font-semibold group flex justify-center items-center my-6"
+        className="bg-white text-center absolute responsive-mt w-64 rounded-md h-14 bottom-3  font-sans text-black text-xl font-semibold group flex justify-center items-center my-6"
       >
         <div
           className={`bg-[#81C7FA] rounded-md h-12 blue-responsive-mt w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[250px] z-10 duration-500 ${
