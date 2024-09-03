@@ -15,7 +15,7 @@ const Hero = () => {
                 <li className="text-[14]">8. Breakout Theatre 1 - Grand Ballroom 1</li>
             </ul>
         </div>
-        <div className="md:block lg:block h-full w-full">
+        <div className="md:block lg:block h-full w-full  lg:w-[500px]">
             <img src="/img112.png" alt="" className="h-full w-full" />
         </div>
     </div>
