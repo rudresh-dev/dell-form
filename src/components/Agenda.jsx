@@ -17,7 +17,7 @@ const jsonData = {
   },
   agenda: [
     {
-      time: "09:05 IST",
+      time: "08:30 IST",
       sessions: [
         {
           title: "General Session (GEN01-P)",
@@ -390,7 +390,7 @@ function Agenda() {
 
         {/* next */}
         <div className=" flex justify-center items-center flex-col w-full">
-          <h2 className="text-left w-[95%] my-2">4 September 2024</h2>
+          <h2 className="text-left w-[95%] my-2">12 September 2024</h2>
           {agenda.map((slot, index) => (
             <div
               key={index}
