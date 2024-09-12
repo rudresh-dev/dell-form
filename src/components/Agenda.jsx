@@ -151,7 +151,7 @@ const jsonData = {
 
         {
           title: "Designing modern data centers purpose-built for AI (MDC01-P)",
-          time: "113:40-14:10",
+          time: "13:40-14:10",
           category: "Modern Data Cent...",
           slot: "Theater 2",
           details:
